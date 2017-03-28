@@ -1,0 +1,25 @@
+$i: 0;
+
+@while $i <= 100 {
+	.h#{$i}{
+		height: #{$i}px;
+	}
+	.h#{$i}p{
+		height: $i * 1%;
+	}
+	$i: $i+10;
+}
+$i: 150;
+@while $i <= 1000 {
+	.h#{$i}{
+		height: #{$i}px;
+	}
+	$i: $i+50;
+}
+$i: 0;
+@while $i < 1000 {
+	.mh#{$i}{
+		max-height: #{$i}px;
+	}
+	$i: $i+50;
+}

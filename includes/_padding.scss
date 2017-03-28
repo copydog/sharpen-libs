@@ -1,0 +1,39 @@
+html {
+	body {
+		$i: 0;
+		@while $i <= 100 {
+			.pt#{$i} {
+				padding-top: #{$i}px !important;
+			}
+			.pb#{$i} {
+				padding-bottom: #{$i}px !important;
+			}
+			$i: $i+5;
+		}
+
+		$i: 0;
+		@while $i <= 50 {
+
+			.pl#{$i} {
+				padding-left: #{$i}px !important;
+			}
+			.pr#{$i} {
+				padding-right: #{$i}px !important;
+			}
+			.ptn#{$i} {
+				padding-top: #{$i*-1}px !important;
+			}
+			.pbn#{$i} {
+				padding-bottom: #{$i*-1}px !important;
+			}
+			.pln#{$i} {
+				padding-left: #{$i*-1}px !important;
+			}
+			.prn#{$i} {
+				padding-right: #{$i*-1}px !important;
+			}
+			$i: $i + 10;
+		}
+
+	}
+}

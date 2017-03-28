@@ -1,0 +1,38 @@
+html {
+	body {
+		$i: 0;
+		@while $i <= 100 {
+			.mt#{$i} {
+				margin-top: #{$i}px !important;
+			}
+			.mb#{$i} {
+				margin-bottom: #{$i}px !important;
+			}
+			$i: $i+5;
+		}
+
+		$i: 0;
+		@while $i <= 50 {
+			.ml#{$i} {
+				margin-left: #{$i}px !important;
+			}
+			.mr#{$i} {
+				margin-right: #{$i}px !important;
+			}
+			.mtn#{$i} {
+				margin-top: #{$i*-1}px !important;
+			}
+			.mbn#{$i} {
+				margin-bottom: #{$i*-1}px !important;
+			}
+			.mln#{$i} {
+				margin-left: #{$i*-1}px !important;
+			}
+			.mrn#{$i} {
+				margin-right: #{$i*-1}px !important;
+			}
+			$i: $i + 10;
+		}
+
+	}
+}

@@ -1,0 +1,25 @@
+$i: 0;
+
+@while $i <= 100 {
+	.w#{$i}{
+		width: #{$i}px;
+	}
+	.w#{$i}p{
+		width: $i * 1%;
+	}
+	$i: $i+10;
+}
+$i: 150;
+@while $i <= 1000 {
+	.w#{$i}{
+		width: #{$i}px;
+	}
+	$i: $i+50;
+}
+$i: 0;
+@while $i < 1000 {
+	.mw#{$i}{
+		max-width: #{$i}px;
+	}
+	$i: $i+50;
+}
